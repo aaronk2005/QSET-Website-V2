@@ -1,0 +1,80 @@
+.menu-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+  height: 150px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* logo bigger + hover */
+.menu-logo {
+  height: 120px;
+  padding-left: 70px;
+  padding-right: 10px;
+  width: auto;
+  transition: transform 0.2s ease-out, filter 0.2s ease-out;
+  cursor: pointer;
+}
+
+.menu-logo:hover {
+  transform: scale(1.05);              /* slight zoom */
+  filter: drop-shadow(0 0 6px #b22222); /* subtle glow */
+}
+
+/* container for text items */
+.menu-items {
+  display: flex;
+  gap: 3rem;
+}
+
+/* menu text bigger */
+.menu-item {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+  position: relative;
+}
+
+
+/* underline hover for items */
+.menu-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 0;
+  height: 2px;
+  background-color: #b22222;
+  transition: width 0.2s ease-out;
+}
+
+.menu-item:hover {
+  color: #000;
+}
+
+.menu-item:hover::after {
+  width: 100%;
+}
+
+/* responsive tweak */
+@media (max-width: 600px) {
+  .menu-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .menu-items {
+    margin-top: 0.5rem;
+    gap: 1.5rem;
+  }
+
+  .menu-logo {
+    height: 60px;
+  }
+}
