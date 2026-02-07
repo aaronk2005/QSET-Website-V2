@@ -24,6 +24,15 @@
   color: white;
 }
 
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 96%;
+  z-index: 1000; /* ensure it stays on top */
+}
+
+
 .App-link {
   color: #61dafb;
 }

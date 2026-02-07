@@ -2,11 +2,15 @@ import './Home.css';
 
 const Home = () => {
     return ( 
-        <div>
+        <div className="home-page">
             <div className="home-container">
                 <img src="/2024-07-24-qset-with-rover.jpg" alt="QSET image" className="team-image" />
                 <div className="home-text"> Queen's Space Engineering Team<br/>
-                    <button className="join-button">Join</button>
+                <div className="home-subtext">Building rovers and satellites for international design competitions</div>
+                    <div className="cta-buttons">
+                        <button className="join-button">Join</button>
+                        <button className="join-button">Sponsor</button>
+                    </div>
                 </div>  
             </div>
             <section className ="about-section">

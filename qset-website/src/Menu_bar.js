@@ -1,8 +1,8 @@
 import './Menu_bar.css';
 
-const Menu_bar = () => {
+const Menu_bar = (props) => {
     return ( 
-        <div className="menu-bar">
+        <div className={`${props.className} menu-bar`}>
             <img src="/qset_logo_image.png" alt="QSET Logo" className="menu-logo" />
             <div className="menu-items">
                 <div className="menu-item">Rover</div>
