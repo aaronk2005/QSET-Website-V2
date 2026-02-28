@@ -1,6 +1,11 @@
 import './Home.css';
+import { Link } from "react-router-dom";
 
 const Home = () => {
+    const handleClickJoin = () => {
+        window.open("https://forms.cloud.microsoft/pages/responsepage.aspx?id=eCPPiRaKW0S_qx14hTcxIa-YdkxsEVNGjzUvsTTTT_VUOUU5Q1o3SFMzSzU4UEgzMTJCWDE3U05OWS4u&route=shorturl", "_blank");
+    }
+
     return ( 
         <div className="home-page">
             <div className="home-container">
@@ -8,8 +13,11 @@ const Home = () => {
                 <div className="home-text"> Queen's Space Engineering Team<br/>
                 <div className="home-subtext">Building rovers and satellites for international design competitions</div>
                     <div className="cta-buttons">
-                        <button className="join-button">Join</button>
-                        <button className="join-button">Sponsor</button>
+                        <button className="join-button" onClick={handleClickJoin}>Join</button>
+                        <Link to="/sponsors" className="menu-item">
+                            {<button className="join-button">Sponsor</button>}
+                        </Link>
+                        
                     </div>
                 </div>  
             </div>
