@@ -1,7 +1,7 @@
-import './Menu_bar.css';
+import './MenuBar.css';
 import { Link } from "react-router-dom";
 
-const Menu_bar = (props) => {
+const MenuBar = (props) => {
     return ( 
         <div className={`${props.className} menu-bar`}>
             <Link to="/" className="menu-item">
@@ -19,4 +19,4 @@ const Menu_bar = (props) => {
      );
 }
  
-export default Menu_bar;
+export default MenuBar;
