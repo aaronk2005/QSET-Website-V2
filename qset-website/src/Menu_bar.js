@@ -1,14 +1,18 @@
 import './Menu_bar.css';
+import { Link } from "react-router-dom";
 
 const Menu_bar = (props) => {
     return ( 
         <div className={`${props.className} menu-bar`}>
-            <img src="/qset_logo_image.png" alt="QSET Logo" className="menu-logo" />
+            <Link to="/" className="menu-item">
+                <img src="/qset_logo_image.png" alt="QSET Logo" className="menu-logo" />
+            </Link>
+            
             <div className="menu-items">
-                <div className="menu-item">Rover</div>
-                <div className="menu-item">Satellite</div>
-                <div className="menu-item">Exec</div>
-                <div className="menu-item">Sponsors</div>
+                <Link to="/rover" className="menu-item">Rover</Link>
+                <Link to="/satellite" className="menu-item">Satellite</Link>
+                <Link to="/exec" className="menu-item">Exec</Link>
+                <Link to="/sponsors" className="menu-item">Sponsors</Link>
             </div>
         </div>
 
