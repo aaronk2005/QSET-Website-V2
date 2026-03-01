@@ -14,7 +14,7 @@ const Home = () => {
                 <div className="home-subtext">Building rovers and satellites for international design competitions</div>
                     <div className="cta-buttons">
                         <button className="join-button" onClick={handleClickJoin}>Join</button>
-                        <Link to="/sponsors" className="menu-item">
+                        <Link to="/sponsors" >
                             {<button className="join-button">Sponsor</button>}
                         </Link>
                         

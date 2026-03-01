@@ -1,20 +1,22 @@
 import './MenuBar.css';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const MenuBar = (props) => {
     return ( 
-        <div className={`${props.className} menu-bar`}>
-            <Link to="/" className="menu-item">
-                <img src="/qset_logo_image.png" alt="QSET Logo" className="menu-logo" />
-            </Link>
+        <nav className={`${props.className} menu-bar`}>
+    
+            <NavLink to="/" >
+                <img src="/qset_logo_image_white.png" alt="QSET Logo" className="menu-logo" />
+            </NavLink>
             
             <div className="menu-items">
-                <Link to="/rover" className="menu-item">Rover</Link>
-                <Link to="/satellite" className="menu-item">Satellite</Link>
-                <Link to="/exec" className="menu-item">Exec</Link>
-                <Link to="/sponsors" className="menu-item">Sponsors</Link>
+                <NavLink to="/" className={({ isActive }) => "menu-item" + (isActive ? " active" : "")}>Home</NavLink>
+                <NavLink to="/rover" className="menu-item">Rover</NavLink>
+                <NavLink to="/satellite" className="menu-item">Satellite</NavLink>
+                <NavLink to="/exec" className="menu-item">Exec</NavLink>
+                <NavLink to="/sponsors" className="menu-item">Sponsors</NavLink>
             </div>
-        </div>
+        </nav>
 
      );
 }
