@@ -1,6 +1,7 @@
 import './App.css';
 import MenuBar from './MenuBar';
-import Home from './Home';  
+import Home from './Home';
+import Exec from './Exec';
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
         </>} />
         <Route path="/rover" element={<><MenuBar className="navbar"/></>}></Route>
         <Route path="/satellite" element={<><MenuBar className="navbar"/></>}></Route>
-        <Route path="/exec" element={<><MenuBar className="navbar"/></>}></Route>
+        <Route path="/exec" element={<><MenuBar className="navbar"/><Exec /></>}></Route>
         <Route path="/sponsors" element={<><MenuBar className="navbar"/></>}></Route>
       </Routes>
     </div>

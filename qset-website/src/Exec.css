@@ -1,0 +1,239 @@
+/* === Page-level layout === */
+/* Root wrapper for the Exec page content */
+.exec-page {
+  padding-top: 150px;
+  min-height: 100vh;
+  background: #6d0000;
+}
+
+/* Centers and constrains the Exec content area */
+.exec-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+/* === Section heading === */
+/* Heading text for the Executive Team section – styled like a large frosted info card */
+.exec-title {
+  display: inline-block;
+  margin: 0 auto 2.5rem;
+  padding: 0.75rem 1.8rem;
+
+  color: #ffffff;
+  font-size: 2.5rem;
+  text-align: center;
+
+  /* Reuse the frosted glass styling from .exec-info */
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35);
+}
+
+/* === Tier + row structure === */
+/* Vertical stack that will contain all the tier sections */
+.exec-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0; /* vertical spacing is controlled by each tier's margin */
+}
+
+/* Wrapper for a single tier (e.g., Satellite Managers) – now purely layout (no title shown) */
+.exec-tier {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 25px; /* base spacing between captain/manager/lead tiers */
+}
+
+/* Extra spacing between member blocks
+   Note: 2 and 5 are the large visual breaks between Satellite → Rover
+   and Rover → Other blocks; others keep the default compact spacing. */
+.exec-tier:nth-child(2),
+.exec-tier:nth-child(5) {
+  margin-bottom: 100px;
+}
+.exec-tier:nth-child(1),
+.exec-tier:nth-child(3),
+.exec-tier:nth-child(4),
+.exec-tier:nth-child(6) {
+  margin-bottom: 25px;
+}
+
+/* Row that holds up to 5 exec cards side by side */
+.exec-row {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: nowrap;
+}
+
+/* === Card and portrait “bubble” === */
+/* Individual executive card: large circle image with overlapping glass info card */
+.exec-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.5rem 0 0;
+  background: transparent;
+  color: #fff;
+}
+
+.exec-portrait{
+  position: relative;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 24px 40px rgba(0,0,0,0.5);
+  isolation: isolate; /* ensures the pseudo-elements only affect this circle */
+}
+
+/* Bubble body + rim (no blur)
+   Uses layered radial-gradients + inset shadows to fake a 3D glass sphere
+   without relying on backdrop-filter (keeps interior image sharp). */
+.exec-portrait::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:inherit;
+  z-index:2;
+  pointer-events:none;
+
+  /* stronger sphere shading */
+  background:
+    radial-gradient(closest-side at 50% 55%,
+      rgba(255,255,255,0.18),
+      rgba(255,255,255,0.06) 55%,
+      rgba(255,255,255,0.00) 75%
+    ),
+    radial-gradient(closest-side at 50% 110%,
+      rgba(0,0,0,0.22),
+      rgba(0,0,0,0.00) 60%
+    );
+
+  /* stronger rim */
+  box-shadow:
+    inset 0 0 0 3px rgba(255,255,255,0.50),
+    inset 0 0 26px rgba(255,255,255,0.14),
+    inset 0 -22px 34px rgba(0,0,0,0.16);
+}
+
+/* Rim-only blur + highlight + rainbow
+   This sits above the image and `::after`, with a radial mask so that only
+   the outer ring is blurred and colorized, preserving a crisp center. */
+.exec-portrait::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:inherit;
+  z-index:3;
+  pointer-events:none;
+
+  /* IMPORTANT: give it a tiny visible fill so backdrop-filter shows */
+  background:
+    radial-gradient(closest-side at 72% 22%,
+      rgba(255,255,255,0.65),
+      rgba(255,255,255,0.18) 26%,
+      rgba(255,255,255,0.00) 52%
+    ),
+    conic-gradient(from 210deg,
+      rgba(255,0,140,0.16),
+      rgba(0,180,255,0.14),
+      rgba(0,255,180,0.12),
+      rgba(255,255,0,0.10),
+      rgba(255,0,140,0.16)
+    );
+
+  /* blur only around the edge ring (center stays sharp) */
+  -webkit-mask: radial-gradient(circle,
+    transparent 0 74%,
+    #000 82%,
+    #000 100%
+  );
+          mask: radial-gradient(circle,
+    transparent 0 74%,
+    #000 82%,
+    #000 100%
+  );
+
+  backdrop-filter: blur(10px) saturate(1.25);
+  -webkit-backdrop-filter: blur(10px) saturate(1.25);
+
+  opacity: 0.95;
+  filter: blur(0.8px);
+}
+
+.exec-image{
+  position:relative;
+  z-index:1;
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  object-fit:cover;
+  display:block;
+}
+
+/* === Info card + text styles === */
+/* Column wrapper for name, role, and links – frosted glass card overlapping the circle */
+.exec-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-top: -40px; /* pull card up to overlap the bottom of the circle */
+  padding: 0.6rem 1rem 0.7rem; /* tighter padding so card just hugs text */
+  min-width: 150px;
+  max-width: 220px; /* keep it compact around name + role */
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35);
+}
+
+/* Executive name text */
+.exec-name {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+/* Executive role / title text */
+.exec-role {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* Email link inside the exec card */
+.exec-email {
+  font-size: 0.9rem;
+  color: #ddd;
+  text-decoration: none;
+}
+
+/* Email link hover state */
+.exec-email:hover {
+  text-decoration: underline;
+}
+
+/* LinkedIn profile link inside the exec card */
+.exec-linkedin {
+  font-size: 0.9rem;
+  color: #0a66c2;
+  text-decoration: none;
+}
+
+/* LinkedIn link hover state */
+.exec-linkedin:hover {
+  text-decoration: underline;
+}
+
