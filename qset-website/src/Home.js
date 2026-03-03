@@ -33,12 +33,30 @@ const Home = () => {
                     <h2 className="section-title">ABOUT US</h2>
                     <img className="team-photo" src={teamPhoto} alt="QSET Team Photo"/>
                     <div className="information-container">
-                        <p className="information-text">Founded in 2017, QSET has grown to become one of the largest student-run space engineering teams in Canada. With a focus on hands-on experience and innovation, QSET provides students with the opportunity to work on real-world projects and gain valuable skills in the field of space engineering.</p>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/TGma5p6oq3Y?si=2J0w3xF2T1gY6VfD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    
+                        <iframe className="information-video" width="672" height="378" src="https://www.youtube.com/embed/TGma5p6oq3Y?si=2J0w3xF2T1gY6VfD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    
+
+                        <ul className="information-list">
+                            <li>Founded in 2017, QSET has grown to become one of the largest student-run space engineering teams in Canada.</li>
+                            <li>Our mission is to provide students with hands-on experience in designing, building, and testing space systems while fostering a collaborative and inclusive environment.</li>
+                            <li>We have successfully launched multiple satellites and rovers, participating in prestigious competitions such as the Canadian Satellite Design Challenge (CSDC) and the University Rover Challenge (URC).</li>
+                            <li>QSET is committed to promoting diversity and inclusion in STEM fields, actively recruiting members from various backgrounds and disciplines.</li>
+                        </ul>
                     </div>
 
             </section>
-            <section className="join-info-section"></section>
+            <section className="join-info-section">
+                    <h2 className="join-section-title">INTERESTED IN QSET?</h2>
+                    <div className="join-boxes-container">
+                        <div className="join-box">
+                                <h3 className="join-box-title">Reasons to Join</h3>
+                                <p className="join-box-content">Joining QSET offers a unique opportunity to gain hands-on experience in space engineering, collaborate with like-minded individuals, and contribute to exciting projects that push the boundaries of technology and innovation.</p>
+                        </div>
+                        <div className="join-box">
+                                <h3 className="join-box-title">How to get Involved</h3>
+                                <p className="join-box-content">To get involved with QSET, simply click the "JOIN OUR TEAM" button above to fill out our interest form. We welcome students from all disciplines and levels of experience to join our team and contribute to our exciting projects.</p>
+                        </div>
+                    </div>
+            </section>
         </div>
        
      );
