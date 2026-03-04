@@ -18,11 +18,11 @@ const Home = () => {
                     <div className="hero-actions">
                          <button className="join-button" onClick={handleClickJoin}>
                             <Users className="button-icon"/>
-                            <span>JOIN OUR TEAM</span>
+                            <span className="button-text">JOIN OUR TEAM</span>
                         </button>
                         <Link className="sponsor-button" to="/sponsors">
                             <Handshake className="button-icon"/>
-                            <span>BECOME A SPONSOR</span>
+                            <span className="button-text">BECOME A SPONSOR</span>
                         </Link>
                     </div>
                    
