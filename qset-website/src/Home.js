@@ -1,8 +1,10 @@
 import './Home.css';
 import { Link } from "react-router-dom";
-import {Handshake, Users} from "lucide-react";
+import {Handshake, Users, Star} from "lucide-react";
 import satelliteImage from './assets/satellite_image.jpg';
 import teamPhoto from './assets/qset_team_photo.jpg';
+import cubesatImage from './assets/cubesat_image.png';
+
 
 const Home = () => {
     const handleClickJoin = () => {
@@ -44,6 +46,51 @@ const Home = () => {
                     </div>
 
             </section>
+            <section className="team-highlights-section">
+                    <h2 className="section-title">TEAM HIGHLIGHTS</h2>
+                    <div className="highlights-container">
+                        <div className="highlight-box">
+                            <div className="highlight-title-container">
+                                <Star className="button-icon"/>
+                                <h3 className="highlight-title">1st Place</h3>
+                            </div>
+                            
+                            <p className="highlight-description">In 2024, QSET's satellite team won first place at the Canadian Satellite Design Challenge (CSDC), showcasing our innovative design and engineering skills.</p>
+                        </div>
+                        <div className="highlight-box">
+                            <div className="highlight-title-container">
+                                <Star className="button-icon"/>
+                                <h3 className="highlight-title">Thingy</h3>
+
+                            </div>
+                            <p className="highlight-description">Our rover team reached the finals of the 2023 University Rover Challenge (URC), demonstrating exceptional performance in mobility, science, and engineering tasks.</p>
+                        </div>
+                        <div className="highlight-box">
+                            <div className="highlight-title-container">
+                                <Star className="button-icon"/>
+                                <h3 className="highlight-title">Epic Launch</h3>
+                            </div>
+                            <p className="highlight-description">In 2022, our satellite team secured second place at the Canadian Satellite Design Challenge (CSDC), highlighting our strong engineering capabilities and dedication.</p>
+                        </div>
+                    </div>
+            </section>
+            <section className="subteams-section">
+                    <h2 className="section-title">OUR SUBTEAMS</h2>
+                    <div className="subteams-container">
+                        <div className="subteam-card">
+                            <img src={cubesatImage} alt="Cubesat" className="subteam-image" style={{ width: "200px", height: "200px" }}/>
+                            <h3 className="subteam-name">Satellite Subteam</h3>
+                            <p className="subteam-description">The Satellite Subteam is responsible for designing, building, and testing our CubeSats, which are small satellites used for various space missions and research projects.</p>
+                        </div>
+                        <div className="subteam-card">
+                            <img src={cubesatImage} alt="Cubesat" className="subteam-image" style={{ width: "200px", height: "200px" }}/>
+                            <h3 className="subteam-name">Rover Subteam</h3>
+                            <p className="subteam-description">The Rover Subteam focuses on designing and building rovers for competitions like the University Rover Challenge (URC), where they tackle complex tasks in simulated Martian environments.</p>
+                        </div>
+                        
+                    </div>
+            </section>
+            <section className="sponsors-section"></section>
             <section className="join-info-section">
                     <h2 className="join-section-title">INTERESTED IN QSET?</h2>
                     <div className="join-boxes-container">
