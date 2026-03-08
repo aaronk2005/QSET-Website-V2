@@ -77,21 +77,26 @@ const Home = () => {
             <section className="subteams-section">
                     <h2 className="section-title">OUR SUBTEAMS</h2>
                     <div className="subteams-container">
-                        <div className="subteam-card">
-                            <img src={cubesatImage} alt="Cubesat" className="subteam-image" style={{ width: "200px", height: "200px" }}/>
-                            <h3 className="subteam-name">Satellite Subteam</h3>
-                            <p className="subteam-description">The Satellite Subteam is responsible for designing, building, and testing our CubeSats, which are small satellites used for various space missions and research projects.</p>
-                        </div>
-                        <div className="subteam-card">
-                            <img src={cubesatImage} alt="Cubesat" className="subteam-image" style={{ width: "200px", height: "200px" }}/>
+                        <Link className="subteam-card" to="/rover">
+                            <div className="image-container">
+                                <img src={cubesatImage} alt="Cubesat" className="subteam-image" />
+                            </div>
                             <h3 className="subteam-name">Rover Subteam</h3>
-                            <p className="subteam-description">The Rover Subteam focuses on designing and building rovers for competitions like the University Rover Challenge (URC), where they tackle complex tasks in simulated Martian environments.</p>
-                        </div>
+                            <p className="subteam-description">The Rover Subteam is responsible for the overall design, integration, and testing of our space systems, ensuring that all components work together seamlessly to achieve mission success. <br/> <br/>Click to learn more!</p>
+                        </Link>
+                        <Link className="subteam-card" to="/satellite">
+                            <div className="image-container">
+                                <img src={cubesatImage} alt="Cubesat" className="subteam-image" />
+                            </div>
+                            <h3 className="subteam-name">Satellite Subteam</h3>
+                            <p className="subteam-description">The Satellite Subteam is responsible for designing, building, and testing our CubeSats, which are small satellites used for various space missions and research projects. <br/> <br/>Click to learn more!</p>
+                        </Link>
+                        
                         
                     </div>
             </section>
             <section className="sponsors-section"></section>
-            <section className="join-info-section">
+            <section className="join-info-section" >
                     <h2 className="join-section-title">INTERESTED IN QSET?</h2>
                     <div className="join-boxes-container">
                         <div className="join-box">
@@ -100,9 +105,12 @@ const Home = () => {
                         </div>
                         <div className="join-box">
                                 <h3 className="join-box-title">How to get Involved</h3>
-                                <p className="join-box-content">To get involved with QSET, simply click the "JOIN OUR TEAM" button above to fill out our interest form. We welcome students from all disciplines and levels of experience to join our team and contribute to our exciting projects.</p>
+                                <p className="join-box-content">To get involved with QSET, simply click <a href="https://forms.cloud.microsoft/pages/responsepage.aspx?id=eCPPiRaKW0S_qx14hTcxIa-YdkxsEVNGjzUvsTTTT_VUOUU5Q1o3SFMzSzU4UEgzMTJCWDE3U05OWS4u&route=shorturl" className="join-link">here</a> to fill out our interest form. We welcome students from all disciplines and levels of experience to join our team and contribute to our exciting projects.</p>
                         </div>
                     </div>
+            </section>
+            <section className="sponsor-section">
+
             </section>
         </div>
        
