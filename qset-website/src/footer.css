@@ -1,6 +1,11 @@
 .footer{
     background-color: #16080f;
     padding-top: 80px;
+    width: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
 }
 
 h3{
@@ -15,6 +20,7 @@ h3{
     border-top: 3px solid #cb1e2a;
     background: #16080f;
     padding-bottom: 40px;
+    padding: 0;
 }
 
 .footer-section {
@@ -80,7 +86,10 @@ h3{
 
 .footer-bottom {
     background-color: #151515;
-    padding: 20px 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
     text-align: center;
 }
 

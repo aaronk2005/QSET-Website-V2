@@ -35,7 +35,9 @@ const Home = () => {
                     <h2 className="section-title">ABOUT US</h2>
                     <img className="team-photo" src={teamPhoto} alt="QSET Team Photo"/>
                     <div className="information-container">
-                        <iframe className="information-video" width="672" height="378" src="https://www.youtube.com/embed/TGma5p6oq3Y?si=2J0w3xF2T1gY6VfD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    
+                        <div className="video-container">
+                            <iframe className="information-video" src="https://www.youtube.com/embed/TGma5p6oq3Y?si=2J0w3xF2T1gY6VfD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    
+                        </div>
 
                         <ul className="information-list">
                             <li>Founded in 2017, QSET has grown to become one of the largest student-run space engineering teams in Canada.</li>
@@ -95,7 +97,12 @@ const Home = () => {
                         
                     </div>
             </section>
-            <section className="sponsors-section"></section>
+            <section className="sponsors-section">
+                    <h2 className="section-title">OUR SPONSORS</h2>
+                    <div className="sponsors-container">
+                        <div className="sponsor-logo">sponsors will go here</div>
+                    </div>
+            </section>
             <section className="join-info-section" >
                     <h2 className="join-section-title">INTERESTED IN QSET?</h2>
                     <div className="join-boxes-container">
@@ -108,9 +115,6 @@ const Home = () => {
                                 <p className="join-box-content">To get involved with QSET, simply click <a href="https://forms.cloud.microsoft/pages/responsepage.aspx?id=eCPPiRaKW0S_qx14hTcxIa-YdkxsEVNGjzUvsTTTT_VUOUU5Q1o3SFMzSzU4UEgzMTJCWDE3U05OWS4u&route=shorturl" className="join-link">here</a> to fill out our interest form. We welcome students from all disciplines and levels of experience to join our team and contribute to our exciting projects.</p>
                         </div>
                     </div>
-            </section>
-            <section className="sponsor-section">
-
             </section>
         </div>
        
