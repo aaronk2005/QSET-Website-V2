@@ -13,7 +13,7 @@ function App() {
         <Route path="/" element={<>
           <MenuBar className="navbar"/>
           <Home />
-          <Footer />
+          
         </>} />
         <Route path="/rover" element={<><MenuBar className="navbar"/></>}></Route>
         <Route path="/satellite" element={<><MenuBar className="navbar"/></>}></Route>
