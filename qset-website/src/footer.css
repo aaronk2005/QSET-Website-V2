@@ -21,6 +21,7 @@ h3{
     background: #16080f;
     padding-bottom: 40px;
     padding: 0;
+    flex-wrap: wrap;
 }
 
 .footer-section {
@@ -96,4 +97,60 @@ h3{
 .footer-bottom-text {
     color: #fffef9;
     font-size: 1rem;
+}
+
+@media (max-width: 900px) {
+    .footer {
+        padding-top: 40px;
+    }
+
+    .footer-box {
+        gap: 40px;
+        justify-content: flex-start;
+        padding: 0 20px 30px;
+    }
+
+    .footer-section {
+        width: 100%;
+        max-width: 560px;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-title {
+        font-size: 1.35rem;
+        padding-top: 18px;
+    }
+
+    .footer-text,
+    .contact-info {
+        font-size: 1rem;
+    }
+
+    .contact-row {
+        gap: 10px;
+        padding-bottom: 12px;
+    }
+
+    .social-icons {
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .social-icon {
+        width: 24px;
+        height: 24px;
+        padding-right: 6px;
+    }
+
+    .footer-bottom {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+
+    .footer-bottom-text {
+        font-size: 0.85rem;
+        padding: 0 12px;
+    }
 }

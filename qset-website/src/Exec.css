@@ -237,3 +237,56 @@
   text-decoration: underline;
 }
 
+@media (max-width: 900px) {
+  .exec-page {
+    padding-top: 120px;
+  }
+
+  .exec-row {
+    flex-wrap: wrap;
+  }
+
+  .exec-tier:nth-child(2),
+  .exec-tier:nth-child(5) {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .exec-container {
+    padding: 1rem 0.8rem;
+  }
+
+  .exec-title {
+    font-size: 1.7rem;
+    margin-bottom: 1.4rem;
+    padding: 0.55rem 1rem;
+  }
+
+  .exec-row {
+    gap: 0.8rem;
+  }
+
+  .exec-portrait {
+    width: 145px;
+    height: 145px;
+  }
+
+  .exec-info {
+    margin-top: -26px;
+    min-width: 130px;
+    max-width: 165px;
+    padding: 0.5rem 0.7rem 0.55rem;
+  }
+
+  .exec-name {
+    font-size: 1rem;
+  }
+
+  .exec-role,
+  .exec-email,
+  .exec-linkedin {
+    font-size: 0.8rem;
+  }
+}
+

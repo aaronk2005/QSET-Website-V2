@@ -28,8 +28,19 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 96%;
+  width: 100%;
   z-index: 1000; /* ensure it stays on top */
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 2000;
+  }
 }
 
 

@@ -236,6 +236,7 @@ section{
   width: 100%;
   height: auto;
   aspect-ratio: 16 / 9;
+  min-width: 300px;
   /*filter: brightness(70%);*/ /*optional filter to make the image darker and more cohesive with the dark theme*/
 }
 
@@ -300,6 +301,7 @@ section{
 .highlights-container{
   display: flex;
   gap: 4%;
+  row-gap: 20px;
   flex-wrap:wrap;
   justify-content: center;
   padding-top: 20px;
@@ -372,12 +374,14 @@ h3{
   justify-content: center;
   flex-wrap: wrap;
   padding-top: 20px;
+  row-gap: 20px;
 }
 
 .subteam-card {
   flex: 1;
   height: auto;
   min-height: 500px;
+  min-width: 300px;
   max-width: 600px;
   background: #0C121F;
   border: 2px solid #cb1e2a;
@@ -448,5 +452,120 @@ h3{
   width: 100%;
   justify-content: center;
   min-height: 300px;
+}
+
+@media (max-width: 900px) {
+  .hero-section {
+    padding-top: 220px;
+    min-height: 72vh;
+    height: auto;
+  }
+
+  .hero-title {
+    font-size: 2.4rem;
+  }
+
+  .hero-description {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    padding: 0 0.5rem;
+  }
+
+  .join-button,
+  .sponsor-button {
+    width: 100%;
+    max-width: 380px;
+    padding: 0.9rem 1.2rem;
+    font-size: 1rem;
+  }
+
+  .button-text {
+    font-size: 1rem;
+  }
+
+  .section-title,
+  .join-section-title {
+    font-size: 2.1rem;
+  }
+
+  .highlight-box {
+    min-width: 100%;
+  }
+
+  .subteam-card {
+    min-height: 0;
+  }
+
+  .join-box {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  section {
+    padding: 28px 14px;
+  }
+
+  .hero-section {
+    padding-top: 250px;
+  }
+
+  .hero-title {
+    font-size: 1.9rem;
+    letter-spacing: 0.03em;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .hero-actions {
+    gap: 0.8rem;
+  }
+
+  .section-title,
+  .join-section-title {
+    font-size: 1.65rem;
+    margin-bottom: 1.1rem;
+    padding-bottom: 0;
+  }
+
+  .information-container {
+    gap: 1.2rem;
+    padding-top: 1rem;
+  }
+
+  .information-list,
+  .highlight-description,
+  .subteam-description,
+  .join-box-content {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .join-box-title,
+  .highlight-title,
+  .subteam-name {
+    font-size: 1.35rem;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .join-box-content,
+  .highlight-description,
+  .subteam-description {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .subteam-card {
+    padding: 12px;
+  }
+
+  .subteam-card:hover {
+    padding: 12px;
+    transform: none;
+  }
 }
 

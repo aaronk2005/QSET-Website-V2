@@ -35,16 +35,17 @@ const Home = () => {
                     <h2 className="section-title">ABOUT US</h2>
                     <img className="team-photo" src={teamPhoto} alt="QSET Team Photo"/>
                     <div className="information-container">
-                        <div className="video-container">
-                            <iframe className="information-video" src="https://www.youtube.com/embed/TGma5p6oq3Y?si=2J0w3xF2T1gY6VfD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    
-                        </div>
-
                         <ul className="information-list">
                             <li>Founded in 2017, QSET has grown to become one of the largest student-run space engineering teams in Canada.</li>
                             <li>Our mission is to provide students with hands-on experience in designing, building, and testing space systems while fostering a collaborative and inclusive environment.</li>
                             <li>We have successfully launched multiple satellites and rovers, participating in prestigious competitions such as the Canadian Satellite Design Challenge (CSDC) and the University Rover Challenge (URC).</li>
                             <li>QSET is committed to promoting diversity and inclusion in STEM fields, actively recruiting members from various backgrounds and disciplines.</li>
                         </ul>
+                        <div className="video-container">
+                            <iframe className="information-video" src="https://www.youtube.com/embed/TGma5p6oq3Y?si=2J0w3xF2T1gY6VfD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    
+                        </div>
+
+                        
                     </div>
 
             </section>
