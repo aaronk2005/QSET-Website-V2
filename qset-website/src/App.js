@@ -11,14 +11,16 @@ function App() {
     
       <Routes>
         <Route path="/" element={<>
+          <title>QSET Home</title>
           <MenuBar className="navbar"/>
           <Home />
           <Footer/>
         </>} />
-        <Route path="/rover" element={<><MenuBar className="navbar"/></>}></Route>
-        <Route path="/satellite" element={<><MenuBar className="navbar"/></>}></Route>
-        <Route path="/exec" element={<><MenuBar className="navbar"/><Exec /></>}></Route>
-        <Route path="/sponsors" element={<><MenuBar className="navbar"/></>}></Route>
+
+        <Route path="/rover" element={<><title>QSET Rover</title><MenuBar className="navbar"/></>}></Route>
+        <Route path="/satellite" element={<><title>QSET Satellite</title><MenuBar className="navbar"/></>}></Route>
+        <Route path="/exec" element={<><title>QSET Exec</title><MenuBar className="navbar"/><Exec /></>}></Route>
+        <Route path="/sponsors" element={<><title>QSET Sponsors</title><MenuBar className="navbar"/></>}></Route>
       </Routes>
     </div>
  
