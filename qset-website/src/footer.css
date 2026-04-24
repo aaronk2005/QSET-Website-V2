@@ -2,7 +2,18 @@
     background-color: #16080f;
     padding-top: 80px;
     width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box
 }
+
+h2, h1, h3{
+    font-family: 'Playfair Display', serif;
+  }
+  
+  div, li, p{
+    font-family: 'Inter', sans-serif;
+  }
 body{
     margin: 0;
     padding: 0;
@@ -16,7 +27,7 @@ h3{
 .footer-box {
     display: flex;
     justify-content: center;
-    gap: 350px;
+    gap: 15vw;
     border-top: 3px solid #cb1e2a;
     background: #16080f;
     padding-bottom: 40px;
@@ -33,7 +44,7 @@ h3{
 }
 
 .footer-title {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: #cb1e2a;
     text-align: left;
@@ -42,7 +53,7 @@ h3{
 }
 
 .contact-info {
-    font-size: 1.25rem;
+    font-size: 1rem;
     line-height: 1.6;
     color: #fffef9;
     display: flex;
@@ -65,7 +76,7 @@ h3{
 
 .footer-text {
     color: #fffef9;
-    font-size: 1.25rem;
+    font-size: 1rem;
     max-width: 320px;
     text-align: left;
 }
@@ -86,7 +97,7 @@ h3{
 }
 
 .footer-bottom {
-    background-color: #151515;
+    
     padding-top: 20px;
     padding-bottom: 20px;
     padding-right: 0px;
@@ -99,7 +110,7 @@ h3{
     font-size: 1rem;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
     .footer {
         padding-top: 40px;
     }

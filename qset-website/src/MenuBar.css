@@ -2,11 +2,27 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 3rem;
-  height: 150px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  
+  height: 100px;
   background-color: #16080f;
   border-bottom: 3px solid #cb1e2a;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  
+  max-width: 100%;
+  box-sizing: border-box
+}
+
+h2, h1, h3{
+  font-size: 2.5rem;
+  font-family: 'Playfair Display', serif;
+}
+
+div, li, p{
+  font-family: 'Inter', sans-serif;
 }
 
 .hamburger-button {
@@ -28,7 +44,7 @@
 
 /* logo bigger + hover */
 .menu-logo {
-  height: 150px;
+  height: 100px;
   padding-left: 70px;
   padding-right: 10px;
   width: auto;
@@ -44,13 +60,14 @@
 /* container for text items */
 .menu-items {
   display: flex;
-  gap: 3rem;
+  gap: 1.5rem;
+  flex-direction: row;
 }
 
 /* menu text bigger */
 .menu-item {
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.25rem;
   color: #fffef9;
   cursor: pointer;
   position: relative;

@@ -54,7 +54,7 @@ const Footer = () => {
                 
             </div>
             <div className="footer-bottom">
-                <span className="footer-bottom-text">© 2026 Queens Space Engineering Team. All rights reserved.</span>
+                <div className="footer-bottom-text">© 2026 Queens Space Engineering Team. All rights reserved.</div>
             </div>
         </section>
      );

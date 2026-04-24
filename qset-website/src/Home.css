@@ -2,11 +2,29 @@
   background: #16080f;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+h2, h1, h3{
+  font-size: 2.5rem;
+  font-family: 'Playfair Display', serif;
+}
+
+div, li, p{
+  font-family: 'Inter', sans-serif;
 }
 
 section{
   
-  padding: 40px 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 0px;
+  padding-right: 0px;
+  box-sizing: border-box;
+  width: 80%;
   
 }
 
@@ -16,9 +34,9 @@ section{
   background-size: cover;                    /* fill the section */
   background-position: center;               /* nicely centered */
   background-repeat: no-repeat;
-  padding-top:350px;
+  padding-top:35vh;
   width: 100%;
-  height: 75vh;
+  height: 100vh;
 }
 
 .hero-overlay {
@@ -45,12 +63,13 @@ section{
     rgba(21, 8, 15, 0.95)
   );
   z-index: 0;
+  
 }
 
 /* HERO TEXT */
 
 .hero-title {
-  font-size: 3.5rem;          /* big headline */
+  font-size: 3rem;          /* big headline */
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -64,7 +83,7 @@ section{
 
 .hero-description {
   max-width: 720px;
-  margin: 0 auto 2.5rem;
+  margin: 0 auto 2rem;
   font-size: 1.5rem;
   line-height: 1.8;
   color: #f5f5f5;
@@ -164,20 +183,21 @@ section{
 .about-section {
     background: #16080f;
     max-width: 1500px;
-    width: 100%;
     align-items: center;
     display: flex;
     flex-direction: column;
     margin: auto;
+    padding-top: 40px;
 }
 
 .section-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: #fffef9;
     text-align: center;
     margin-bottom: 2rem;
     background: #16080f;
+    
 }
 
 .information-container {
@@ -192,15 +212,15 @@ section{
 
 .team-photo{
   height: auto;
-  max-height: 400px;
+  max-height: 300px;
   width: 100%;
   /*filter: brightness(70%);*/ /*optional filter to make the image darker and more cohesive with the dark theme*/
   border: 7px solid #cb1e2a;
   border-radius: 8px;
+  box-sizing: border-box
 }
 
 .join-section-title {
-    font-size: 3rem;
     font-weight: 700;
     color: #fffef9;
     text-align: center;
@@ -243,7 +263,6 @@ section{
 .join-info-section {
   background: #16080f;
     max-width: 1500px;
-    width: 100%;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -267,7 +286,7 @@ section{
 }
 
 .join-box-title {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: #cb1e2a;
   text-align: left;
@@ -277,7 +296,7 @@ section{
 }
 
 .join-box-content {
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.6;
   color: #f5f5f5;
   text-align: left;
@@ -292,7 +311,6 @@ section{
 .team-highlights-section {
   background: #16080f;
     max-width: 1500px;
-    width: 100%;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -310,7 +328,7 @@ section{
 .highlight-box {
   flex: 1;
   height: auto;
-  min-width: 400px;
+  min-width: 300px;
   background: #0C121F;
   border: 2px solid #cb1e2a;
   border-radius: 8px;
@@ -323,11 +341,11 @@ section{
   align-items: center;
   gap: 12px;
   padding-left: 20px;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 .highlight-title{
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: #cb1e2a;
   text-align: left;
@@ -361,7 +379,6 @@ h3{
 .subteams-section {
   background: #16080f;
     max-width: 1500px;
-    width: 100%;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -437,7 +454,6 @@ h3{
 .sponsors-section{
   background: #16080f;
     max-width: 1500px;
-    width: 100%;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -454,11 +470,11 @@ h3{
   min-height: 300px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .hero-section {
-    padding-top: 220px;
-    min-height: 72vh;
-    height: auto;
+    padding-top: 35vh;
+    height: 100vh;
+    box-sizing: border-box;
   }
 
   .hero-title {
@@ -504,10 +520,12 @@ h3{
 @media (max-width: 600px) {
   section {
     padding: 28px 14px;
+    box-sizing: border-box;
   }
 
   .hero-section {
     padding-top: 250px;
+    height: 100vh;
   }
 
   .hero-title {
