@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 100%;
   overflow-x: hidden;
   box-sizing: border-box;
 }
@@ -15,6 +14,8 @@ h2, h1, h3{
 
 div, li, p{
   font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  font-size: 1rem;
 }
 
 section{
@@ -292,7 +293,6 @@ section{
   text-align: left;
   padding-left: 40px;
   padding-top: 20px;
-  font-size: 2.2rem;
 }
 
 .join-box-content {
@@ -354,8 +354,6 @@ section{
 }
 
 .highlight-description {
-  font-size: 1.25rem;
-  line-height: 1.6;
   color: #f5f5f5;
   text-align: left;
   padding: 0px 20px;
@@ -431,19 +429,17 @@ h3{
 }
 
 .subteam-name {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: #cb1e2a;
   text-align: left;
   margin-top: 15px;
   padding: 20px;
+  padding-left: 20px;
   padding-bottom: 0px;
-  text-decoration: none;
 }
 
 .subteam-description {
-  font-size: 1.25rem;
-  line-height: 1.6;
   color: #f5f5f5;
   text-align: left;
   margin-top: 10px;

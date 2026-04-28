@@ -1,0 +1,135 @@
+.rover-page{
+    background: #16080f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden;
+    
+  }
+  
+h1{
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    color: #fffef9;
+  }
+
+  h2{
+    font-size: 2.5rem;
+    font-family: 'Playfair Display', serif;
+    color: #fffef9;
+  }
+
+  h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #cb1e2a;
+  }
+  
+  div, li, p{
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    color: #fffef9;
+    text-align: left;
+  }
+  
+  section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 80%;
+
+    
+  }
+
+  .title{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding-top: 150px;
+  }
+
+  .rover-info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 2px solid #cb1e2a;
+    border-radius: 8px;
+    background-color: #0C121F;
+    box-sizing: content-box;
+  }
+
+  .rover-image{
+    width: 20vw;
+    height: auto;
+    min-width: 300px;
+    padding-bottom: 20px;
+  }
+
+  .info-text{
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 20px;
+    min-width: 200px;
+    width: 50vw;
+  }
+
+  .rover-subteams{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .subteams-title{
+    padding-bottom: 20px;
+    padding-top: 40px;
+    margin: 0;
+  }
+  .subteam-row{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .subteam-box{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: left;
+    align-items: center;
+    border: 2px solid #cb1e2a;
+    background-color: #0C121F;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .subteam-icon{
+    color: #cb1e2a;
+    width: 20%;
+    max-width: 80px;
+    min-width: 50px;
+    height: auto;
+    padding: 15px;
+    padding-right: 0px;
+    margin: 0;
+  }
+
+  .subteam-name{
+    text-align: left;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+  }
+  .subteam-text{
+    padding-top: 0px;
+    margin: 0;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+
+

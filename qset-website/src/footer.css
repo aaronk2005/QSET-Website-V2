@@ -4,7 +4,8 @@
     width: 100%;
     padding-left: 0;
     padding-right: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
+    display: block;
 }
 
 h2, h1, h3{
@@ -27,19 +28,21 @@ h3{
 .footer-box {
     display: flex;
     justify-content: center;
-    gap: 15vw;
+    gap: clamp(15px, 15vw, 250px);
     border-top: 3px solid #cb1e2a;
     background: #16080f;
     padding-bottom: 40px;
     padding: 0;
     flex-wrap: wrap;
+    row-gap: 20px;
+    width: 100%;
 }
 
 .footer-section {
     display: flex;
     flex-direction: column;
     align-items: left;
-    gap: 20px;
+    gap: 15px;
     
 }
 
@@ -97,12 +100,15 @@ h3{
 }
 
 .footer-bottom {
-    
+    width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-right: 0px;
     padding-left: 0px;
     text-align: center;
+    box-sizing: border-box;
+    justify-content: center;
+    display: flex;
 }
 
 .footer-bottom-text {

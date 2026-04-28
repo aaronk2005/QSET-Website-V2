@@ -4,6 +4,7 @@ import Footer from './Footer';
 import Home from './Home';
 import Exec from './Exec';
 import { Routes, Route } from "react-router-dom";
+import Rover from './Rover';
 
 function App() {
   return (
@@ -17,8 +18,12 @@ function App() {
           <Footer/>
         </>} />
 
-        <Route path="/rover" element={<><title>QSET Rover</title><MenuBar className="navbar"/></>}></Route>
-        <Route path="/satellite" element={<><title>QSET Satellite</title><MenuBar className="navbar"/></>}></Route>
+        <Route path="/rover" element={<>
+          <title>QSET Home</title>
+          <MenuBar className="navbar"/>
+          <Rover/>
+          <Footer/>
+        </>} />        <Route path="/satellite" element={<><title>QSET Satellite</title><MenuBar className="navbar"/></>}></Route>
         <Route path="/exec" element={<><title>QSET Exec</title><MenuBar className="navbar"/><Exec /></>}></Route>
         <Route path="/sponsors" element={<><title>QSET Sponsors</title><MenuBar className="navbar"/></>}></Route>
       </Routes>
