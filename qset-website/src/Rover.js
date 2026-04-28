@@ -1,6 +1,7 @@
 import './Rover.css';
 import roverImage from './assets/rover_image.png';
 import {Clipboard, Cog, TestTubeDiagonal, CircuitBoard} from "lucide-react";
+import roverTeamPhoto from './assets/rover-team-photo.jpg';
 
 const Rover = () => {
     return(
@@ -53,7 +54,9 @@ const Rover = () => {
                     </div>
                 </div>
             </section>
-            <section></section>
+            <section>
+                <img src={roverTeamPhoto} alt="roverTeam" className="rover-team-photo" />
+            </section>
         </div>
     );
      

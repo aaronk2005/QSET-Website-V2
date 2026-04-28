@@ -132,4 +132,10 @@ h1{
     padding-bottom: 10px;
   }
 
+  .rover-team-photo{
+    width: 100%;
+    border: 2px solid #cb1e2a;
+    border-radius: 8px;
+  }
+
 
