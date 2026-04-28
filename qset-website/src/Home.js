@@ -84,14 +84,14 @@ const Home = () => {
                             <div className="image-container">
                                 <img src={cubesatImage} alt="Cubesat" className="subteam-image" />
                             </div>
-                            <h3 className="subteam-name">Rover Subteam</h3>
+                            <h3 className="subteam-card-name">Rover Subteam</h3>
                             <p className="subteam-description">The Rover Subteam is responsible for the overall design, integration, and testing of our space systems, ensuring that all components work together seamlessly to achieve mission success. <br/> <br/>Click to learn more!</p>
                         </Link>
                         <Link className="subteam-card" to="/satellite">
                             <div className="image-container">
                                 <img src={cubesatImage} alt="Cubesat" className="subteam-image" />
                             </div>
-                            <h3 className="subteam-name">Satellite Subteam</h3>
+                            <h3 className="subteam-card-name">Satellite Subteam</h3>
                             <p className="subteam-description">The Satellite Subteam is responsible for designing, building, and testing our CubeSats, which are small satellites used for various space missions and research projects. <br/> <br/>Click to learn more!</p>
                         </Link>
                         

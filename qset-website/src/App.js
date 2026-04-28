@@ -19,7 +19,7 @@ function App() {
         </>} />
 
         <Route path="/rover" element={<>
-          <title>QSET Home</title>
+          <title>QSET Rover</title>
           <MenuBar className="navbar"/>
           <Rover/>
           <Footer/>

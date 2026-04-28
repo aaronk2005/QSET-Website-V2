@@ -88,6 +88,7 @@ section{
   font-size: 1.5rem;
   line-height: 1.8;
   color: #f5f5f5;
+  text-align: center;
 }
 
 /* BUTTON ROW */
@@ -216,7 +217,7 @@ section{
   max-height: 300px;
   width: 100%;
   /*filter: brightness(70%);*/ /*optional filter to make the image darker and more cohesive with the dark theme*/
-  border: 7px solid #cb1e2a;
+  border: 4px solid #cb1e2a;
   border-radius: 8px;
   box-sizing: border-box
 }
@@ -252,7 +253,7 @@ section{
   align-items: center;
 }
 .information-video {
-  border: 7px solid #cb1e2a;
+  border: 4px solid #cb1e2a;
   border-radius: 8px;
   width: 100%;
   height: auto;
@@ -376,7 +377,7 @@ h3{
 /*subteam section */
 .subteams-section {
   background: #16080f;
-    max-width: 1500px;
+    max-width: 800px;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -385,7 +386,7 @@ h3{
 
 .subteams-container {
   display: flex;
-  gap: 4%;
+  gap: 6%;
   justify-content: center;
   flex-wrap: wrap;
   padding-top: 20px;
@@ -402,6 +403,7 @@ h3{
   border: 2px solid #cb1e2a;
   border-radius: 8px;
   padding: 20px;
+  padding-bottom: 0px;
 }
 .subteam-card:hover {
   background: #0C121F;
@@ -423,17 +425,16 @@ h3{
 .subteam-image{
   width: 100%;
   height: auto;
-  max-height: 300px;
+  max-height: 200px;
   border: 2px solid #cb1e2a;
   border-radius: 8px;
 }
 
-.subteam-name {
+.subteam-card-name {
   font-size: 1.5rem;
   font-weight: 600;
   color: #cb1e2a;
   text-align: left;
-  margin-top: 15px;
   padding: 20px;
   padding-left: 20px;
   padding-bottom: 0px;
@@ -445,6 +446,8 @@ h3{
   margin-top: 10px;
   padding: 20px;
   padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .sponsors-section{
@@ -560,7 +563,7 @@ h3{
 
   .join-box-title,
   .highlight-title,
-  .subteam-name {
+  .subteam-card-name {
     font-size: 1.35rem;
     padding-left: 16px;
     padding-right: 16px;
