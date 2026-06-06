@@ -1,11 +1,13 @@
 .footer{
     background-color: #16080f;
-    padding-top: 80px;
+    padding-top: 40px;
     width: 100%;
-    padding-left: 0;
-    padding-right: 0;
     box-sizing: border-box;
     display: block;
+    border-top: 3px solid #cb1e2a;
+    padding-bottom: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 h2, h1, h3{
@@ -27,9 +29,9 @@ h3{
 
 .footer-box {
     display: flex;
-    justify-content: center;
-    gap: clamp(15px, 15vw, 250px);
-    border-top: 3px solid #cb1e2a;
+    justify-content: space-between;
+    gap: 40px;
+    padding-bottom: 20px;
     background: #16080f;
     padding-bottom: 40px;
     padding: 0;
@@ -41,7 +43,6 @@ h3{
 .footer-section {
     display: flex;
     flex-direction: column;
-    align-items: left;
     gap: 15px;
     
 }
@@ -123,18 +124,21 @@ h3{
 
     .footer-box {
         gap: 40px;
-        justify-content: flex-start;
-        padding: 0 20px 30px;
+        justify-content: center;
+        align-items: center;
     }
 
     .footer-section {
-        width: 100%;
-        max-width: 560px;
         gap: 12px;
     }
 }
 
 @media (max-width: 600px) {
+.footer-box{
+    justify-content: flex-start;
+    padding-bottom: 20px;
+}
+
     .footer-title {
         font-size: 1.35rem;
         padding-top: 18px;
@@ -164,10 +168,12 @@ h3{
     .footer-bottom {
         padding-top: 14px;
         padding-bottom: 14px;
+        justify-content: flex-start;
     }
 
     .footer-bottom-text {
         font-size: 0.85rem;
-        padding: 0 12px;
+        padding: 0;
+        text-align: left;
     }
 }
