@@ -535,5 +535,15 @@ h3{
     padding-left: 10px;
     padding-right: 10px;
   }
+
+  ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+  section{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 

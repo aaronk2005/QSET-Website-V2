@@ -5,6 +5,7 @@ import Home from './Home';
 import Exec from './Exec';
 import { Routes, Route } from "react-router-dom";
 import Rover from './Rover';
+import Satellite from './Satellite';
 
 function App() {
   return (
@@ -23,7 +24,15 @@ function App() {
           <MenuBar className="navbar"/>
           <Rover/>
           <Footer/>
-        </>} />        <Route path="/satellite" element={<><title>QSET Satellite</title><MenuBar className="navbar"/></>}></Route>
+        </>} />   
+
+        <Route path="/satellite" element={<>
+          <title>QSET Satellite</title>
+          <MenuBar className="navbar"/>
+          <Satellite/>
+          <Footer/>
+        </>}/>
+
         <Route path="/exec" element={<><title>QSET Exec</title><MenuBar className="navbar"/><Exec /></>}></Route>
         <Route path="/sponsors" element={<><title>QSET Sponsors</title><MenuBar className="navbar"/></>}></Route>
       </Routes>
