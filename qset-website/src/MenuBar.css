@@ -42,9 +42,16 @@ div, li, p{
   border-radius: 2px;
 }
 
+.menu-logo-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
 /* logo bigger + hover */
 .menu-logo {
-  height: 100px;
+  height: 80%;
   padding-left: 70px;
   padding-right: 10px;
   width: auto;
@@ -83,7 +90,7 @@ div, li, p{
   inset: 0px 0px;           /* expand box slightly around text */
   background-color: #cb1e2a;
   opacity: 0.5;                /* semi translucent */
-  border-radius: 2px;          /* optional: slight rounding */
+  border-radius: 8px;          /* optional: slight rounding */
   z-index: -1; 
   
 }
@@ -94,6 +101,7 @@ div, li, p{
 
 .menu-item.active{
   background-color:#cb1e2a;
+  border-radius: 8px;
   
 }
 

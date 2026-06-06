@@ -19,13 +19,15 @@ div, li, p{
 }
 
 section{
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 100px;
+  padding-right: 100px;
   box-sizing: border-box;
-  width: 80%;
+  width: 100%;
   
 }
 
@@ -35,13 +37,14 @@ section{
   background-size: cover;                    /* fill the section */
   background-position: center;               /* nicely centered */
   background-repeat: no-repeat;
-  padding-top:35vh;
-  width: 100%;
+  padding-top:100px;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-overlay {
-  position: relative;
   z-index: 1;                                /* above overlay */
   display: flex;
   flex-direction: column;
@@ -107,7 +110,7 @@ section{
   align-items: center;
   justify-content: center;
   padding: 1rem 2.5rem;
-  border-radius: 0;
+  border-radius: 8px;
   border: none;
   background-color: #cb1e2a;
   color: #fffef9;
@@ -141,7 +144,7 @@ section{
   align-items: center;
   justify-content: center;
   padding: 1rem 2.5rem;
-  border-radius: 0;
+  border-radius: 8px;
   border: none;
   background-color: #fffef9;
   color: #16080f;
@@ -184,12 +187,10 @@ section{
 /*info sections */
 .about-section {
     background: #16080f;
-    max-width: 1500px;
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin: auto;
-    padding-top: 40px;
+    margin: 0;
 }
 
 .section-title {
@@ -206,9 +207,9 @@ section{
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 4%;
+  gap: 40px;
   flex-wrap: wrap;
-  padding-top: 4rem;
+  padding-top: 20px;
   justify-content: center;
 }
 
@@ -238,6 +239,7 @@ section{
   color: #f5f5f5;
   text-align: left;
   flex: 1;
+  min-width: 400px;
 }
 
 .information-list li::marker {
@@ -264,19 +266,19 @@ section{
 
 .join-info-section {
   background: #16080f;
-    max-width: 1500px;
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: 0;
 }
 
 .join-boxes-container {
   display: flex;
-  gap: 4%;
+  gap: 40px;
   justify-content: center;
   flex-wrap: wrap;
-  padding-top: 20px;
+  
+  row-gap: 20px;
 }
 
 .join-box{
@@ -285,6 +287,7 @@ section{
   background: #0C121F;
   border: 2px solid #cb1e2a;
   border-radius: 8px;
+  min-width: 300px;
 }
 
 .join-box-title {
@@ -311,19 +314,20 @@ section{
 /*highlight section */
 .team-highlights-section {
   background: #16080f;
-    max-width: 1500px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
+  display: flex;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  justify-content: center;
+  width: 100%;
 }
 .highlights-container{
   display: flex;
-  gap: 4%;
+  gap: 40px;
   row-gap: 20px;
   flex-wrap:wrap;
   justify-content: center;
-  padding-top: 20px;
 }
 
 .highlight-box {
@@ -377,43 +381,36 @@ h3{
 /*subteam section */
 .subteams-section {
   background: #16080f;
-    max-width: 800px;
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: 0;
 }
 
 .subteams-container {
   display: flex;
-  gap: 6%;
   justify-content: center;
+  gap: 40px;
   flex-wrap: wrap;
-  padding-top: 20px;
+  padding-top: 0px;
   row-gap: 20px;
+  margin: 0;
+  width: 100%;
 }
 
 .subteam-card {
-  flex: 1;
   height: auto;
   min-height: 500px;
   min-width: 300px;
-  max-width: 600px;
+  max-width: 500px;
+  width: calc(50% - 64px);
   background: #0C121F;
   border: 2px solid #cb1e2a;
   border-radius: 8px;
   padding: 20px;
   padding-bottom: 0px;
 }
-.subteam-card:hover {
-  background: #0C121F;
-  border: 2px solid #cb1e2a;
-  border-radius: 8px;
-  padding: 20px;
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-} 
+
 
 .image-container {
   display: flex;
@@ -443,25 +440,23 @@ h3{
 .subteam-description {
   color: #f5f5f5;
   text-align: left;
-  margin-top: 10px;
   padding: 20px;
   padding-top: 0px;
-  padding-bottom: 0px;
+  padding-bottom: 10px;
   margin-bottom: 0;
 }
 
 .sponsors-section{
   background: #16080f;
-    max-width: 1500px;
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: 0;
 
 }
 .sponsors-container{
   display: flex;
-  gap: 4%;
+  gap: 40px;
   background: #f5f5f5;
   flex-wrap: wrap;
   width: 100%;
@@ -470,119 +465,76 @@ h3{
 }
 
 @media (max-width: 1100px) {
-  .hero-section {
-    padding-top: 35vh;
-    height: 100vh;
-    box-sizing: border-box;
+  section{
+    padding-right: 20px;
+    padding-left: 20px;
   }
-
-  .hero-title {
-    font-size: 2.4rem;
-  }
-
-  .hero-description {
-    font-size: 1.15rem;
-    line-height: 1.6;
-    padding: 0 0.5rem;
-  }
-
-  .join-button,
-  .sponsor-button {
-    width: 100%;
-    max-width: 380px;
-    padding: 0.9rem 1.2rem;
-    font-size: 1rem;
-  }
-
-  .button-text {
-    font-size: 1rem;
-  }
-
-  .section-title,
-  .join-section-title {
-    font-size: 2.1rem;
-  }
-
-  .highlight-box {
-    min-width: 100%;
-  }
-
-  .subteam-card {
-    min-height: 0;
-  }
-
-  .join-box {
-    min-width: 100%;
-  }
+  
 }
 
 @media (max-width: 600px) {
-  section {
-    padding: 28px 14px;
-    box-sizing: border-box;
+  .section{
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100%;
   }
 
-  .hero-section {
-    padding-top: 250px;
-    height: 100vh;
+  .hero-title{
+    font-size: 2rem;
   }
 
-  .hero-title {
-    font-size: 1.9rem;
-    letter-spacing: 0.03em;
+  .hero-description{
+    font-size: 1.25rem;
   }
 
-  .hero-description {
-    font-size: 1rem;
-    margin-bottom: 1.2rem;
+  .button-text{
+    font-size: 1.25rem;
   }
 
-  .hero-actions {
-    gap: 0.8rem;
+  .join-button, .sponsor-button {
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    padding: 10px;
+    margin: 0;
   }
 
-  .section-title,
-  .join-section-title {
-    font-size: 1.65rem;
-    margin-bottom: 1.1rem;
-    padding-bottom: 0;
+  .about-section{
+    margin: 0;
+    padding: 0px;
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 
-  .information-container {
-    gap: 1.2rem;
-    padding-top: 1rem;
+  .information-container{
+    width: 100%;
   }
 
-  .information-list,
-  .highlight-description,
-  .subteam-description,
-  .join-box-content {
-    font-size: 1rem;
-    line-height: 1.5;
+  .information-list{
+    width: 100%;
+    max-width: none;
+    padding: 0px;
+    margin: 0;
+    min-width: 200px;
   }
 
-  .join-box-title,
-  .highlight-title,
-  .subteam-card-name {
-    font-size: 1.35rem;
-    padding-left: 16px;
-    padding-right: 16px;
+  .team-highlights-section{
+    padding-right: 10px;
+    padding-left: 10px;
   }
 
-  .join-box-content,
-  .highlight-description,
-  .subteam-description {
-    padding-left: 16px;
-    padding-right: 16px;
+  .highlights-container{
+    width: 100%;
+    max-width: none;
+    min-width: 0;
   }
 
-  .subteam-card {
-    padding: 12px;
-  }
-
-  .subteam-card:hover {
-    padding: 12px;
-    transform: none;
+  .sponsors-section, .join-info-section{
+    margin: 0;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 

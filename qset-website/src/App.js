@@ -15,7 +15,7 @@ function App() {
           <title>QSET Home</title>
           <MenuBar className="navbar"/>
           <Home />
-          <Footer/>
+          
         </>} />
 
         <Route path="/rover" element={<>

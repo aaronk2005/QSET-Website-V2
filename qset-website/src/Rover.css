@@ -32,19 +32,6 @@ h1{
     color: #fffef9;
     text-align: left;
   }
-  
-  section{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 0px;
-    padding-right: 0px;
-    width: 80%;
-
-    
-  }
 
   .title{
     display: flex;

@@ -9,7 +9,7 @@ const MenuBar = (props) => {
     return ( 
         <nav className={`${props.className} menu-bar`}>
     
-            <NavLink to="/" >
+            <NavLink className="menu-logo-link" to="/" >
                 <img src="/qset_logo_image_white.png" alt="QSET Logo" className="menu-logo" />
             </NavLink>
 
